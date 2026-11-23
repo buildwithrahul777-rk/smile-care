@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-primary: #087E83;
+  --color-teal-primary-dark: #066569;
+  --color-mint-secondary: #DDF5EF;
+  --color-surface-soft: #F5FAF9;
+  --color-navy-ink: #172D35;
+  --color-navy-muted: #4A626A;
+  --color-teal-accent: #42B8A5;
+
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-navy-ink);
+    background-color: #ffffff;
+    scroll-padding-top: 5.5rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Smooth focus ring consistency */
+:focus-visible {
+  outline: 2px solid #087E83;
+  outline-offset: 2px;
+}

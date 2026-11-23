@@ -1,0 +1,8 @@
+{
+  "name": "SmileCare Dental Studio",
+  "description": "Modern dental clinic showcase website featuring patient-focused treatments, doctor profiles, editable demo placeholders, and an interactive appointment request experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
